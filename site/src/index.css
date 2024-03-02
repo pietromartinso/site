@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "UsedFonts";
+  src: url("") format("woff2"),
+    url("") format("woff");
+}
+
+:root {
+  --color-black: 0, 0, 0;
+  --color-white: 255, 255, 255;
+  --color-pink: 245, 175, 192;
+  --color-dark-green: 15, 68, 74;
+  --color-light-green: 25, 169, 168;
+
+  --font-size-small: 1rem;
+  --font-size-medium: 1.3rem;
+  --font-size-large: 2rem;
+
+  --font-one: 'UsedFonts', sans-serif;
+}

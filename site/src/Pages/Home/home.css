@@ -1,0 +1,14 @@
+.home h1 {
+  color: var(--color-blue);
+  font-size: var(--font-size-large);
+}
+
+.home h2 {
+  color: var(--color-blue);
+  font-size: var(--font-size-medium);
+}
+
+.home h3 {
+  color: var(--color-blue);
+  font-size: var(--font-size-small);
+}
