@@ -1,24 +1,24 @@
 import "./card-courses.css";
-import Logica from "../../assets/codigo.png"
 
-function CardCourses() {
+
+function CardCourses({ logo, textTitle, textSubTitle}) {
   return (
     <div className="card-courses">
-      <container>
+      <div className="container">
         <div className="logo-course">
-            <img src={Logica} alt="Icon Logic" />
+            <img src={logo} alt="Icon Logic" />
         </div>
         <div className="infos">
           <div className="title">
-            <h3>Lógica de programação em pseudo código</h3>
-            <p>Inídio imediato!</p>
+            <h3>{textTitle}</h3>
+            <p>{textSubTitle}</p>
           </div>
           <div className="summary"></div>
         </div>
         <div className="see-details">
             <button>{`VER DETALHES`}</button>
         </div>
-      </container>
+      </div>
     </div>
   );
 }

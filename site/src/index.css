@@ -2,25 +2,28 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--font-one);
 }
 
 @font-face {
   font-family: "UsedFonts";
-/*   src: url("") format(""),
+  /*   src: url("") format(""),
     url("") format(""); */
 }
 
 :root {
   --color-black: 0, 0, 0;
   --color-white: 255, 255, 255;
-  --color-pink: 241, 241, 241;
   --color-dark-green: 15, 68, 74;
   --color-light-green: 25, 169, 168;
+  --color-light-blue: 153, 211, 219;
+  --color-yellow: 241, 187, 82;
+  --color-orange: 246, 142, 79;
 
   --font-size-small: 1rem;
   --font-size-medium: 1.3rem;
   --font-size-large: 2rem;
+  --font-size-biggest: 3rem;
 
-  --font-one: 'UsedFonts', sans-serif;
- 
+  --font-one: "UsedFonts", sans-serif;
 }

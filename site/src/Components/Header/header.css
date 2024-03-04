@@ -7,8 +7,14 @@
   height: 96px;
 
   padding: 0 40px;
-
-  border-bottom: 1px solid rgba(var(--color-light-green), 0.5);
+  border-bottom: 1px solid rgba(var(--color-dark-green), 1);
+  background: linear-gradient(
+    90deg,
+    rgba(15, 68, 74, 1) 0%,
+    rgba(153, 211, 219, 1) 0%,
+    rgba(15, 68, 74, 1) 33%,
+    rgba(15, 68, 74, 1) 100%
+  );
 }
 
 .header img {
@@ -42,18 +48,18 @@
   height: 40px;
   padding: 0 12px;
 
-  font-family: var(--font-one);
   font-size: var(--font-size-medium);
-  color: rgba(var(--color-dark-green), 1);
+  color: rgba(var(--color-orange), 1);
+  text-shadow: 2px 2px 1px rgba(var(--color-dark-green), 1);
   text-decoration: none;
 
   transition: ease-out 0.2s;
+  border-radius: 10px;
 }
 
 .header .navbar ul li a:hover {
   padding: 0 12px;
-  background-color: rgba(var(--color-pink), 0.2);
-  border-radius: 10px;
+  background-color: rgba(var(--color-light-green), 0.4);
 }
 
 .header .access {
@@ -67,7 +73,7 @@
   padding: 0 20px;
   gap: 20px;
 
-  border-left: 1px solid rgba(var(--color-light-green), 0.5);
+  border-left: 1px solid rgba(var(--color-orange), 1);
 }
 
 .header .access .login {
@@ -84,7 +90,7 @@
   transition: ease-in-out 0.2s;
 }
 .header .access .login:hover {
-  background-color: rgba(var(--color-pink), 0.2);
+  background-color: rgba(var(--color-light-green), 0.5);
 }
 
 .header .access .login img {
@@ -94,8 +100,7 @@
 .header .access button {
   all: unset;
 
-  font-family: var(--font-one);
-  color: rgba(var(--color-dark-green), 1);
+  color: rgba(var(--color-orange), 1);
   font-weight: 600;
 }
 
@@ -106,7 +111,7 @@
 
   height: 38px;
   width: 160px;
-  border: 1px solid rgba(var(--color-dark-green), 1);
+  border: 1px solid rgba(var(--color-orange), 1);
   border-radius: 10px;
 
   cursor: pointer;

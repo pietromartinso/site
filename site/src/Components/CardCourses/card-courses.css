@@ -7,11 +7,10 @@
   height: 400px;
 
   border-radius: 10px;
-  border: 1px solid rgba(var(--color-light-green), 0.5);
-  background-color: rgba(var(--color-pink), 1);
+  border: 1px solid rgba(var(--color-dark-green), 1);
 }
 
-.card-courses container {
+.card-courses .container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -97,13 +96,11 @@
 
 .card-courses .infos .title h3 {
   margin: 20px 0;
-  font-family: var(--font-one);
   font-size: var(--font-size-medium);
   color: rgba(var(--color-dark-green), 1);
 }
 
 .card-courses .infos .title p {
-  font-family: var(--font-one);
   font-size: var(--font-size-small);
   color: rgba(var(--color-dark-green), 1);
 }
@@ -126,17 +123,17 @@
   height: 50px;
   width: 100%;
 
-  border: 2px solid rgba(var(--color-dark-green));
+  border: 1px solid rgba(var(--color-dark-green));
+  background-color: rgba(var(--color-light-green), 0.6);
   border-radius: 10px;
 
-  font-family: var(--font-one);
   color: rgba(var(--color-dark-green), 1);
   font-weight: 600;
 
   cursor: pointer;
-  transition: ease-in-out 0.1s;
+  transition: ease-in-out 0.2s;
 }
 
 .card-courses .see-details button:hover {
-  background-color: rgba(var(--color-light-green), 0.5);
+  background-color: rgba(var(--color-orange), 1);
 }
