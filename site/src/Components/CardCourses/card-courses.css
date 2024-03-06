@@ -8,6 +8,7 @@
 
   border-radius: 10px;
   border: 1px solid rgba(var(--color-dark-green), 1);
+  box-shadow: 0 0 8px 1px rgba(var(--color-dark-green), 1);
 }
 
 .card-courses .container {

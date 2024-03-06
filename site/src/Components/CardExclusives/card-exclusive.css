@@ -1,0 +1,102 @@
+.card-exclusive {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 500px;
+  height: 300px;
+
+  border-radius: 10px;
+  border: 1px solid rgba(var(--color-orange), 1);
+  box-shadow: 0 0 10px 1px rgba(var(--color-dark-green), 1);
+}
+
+.card-exclusive .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 86%;
+  width: 86%;
+
+  border-radius: 10px;
+}
+
+.card-exclusive .logo-course {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  width: 100%;
+  height: 145px;
+  border-radius: 5px;
+
+  background: radial-gradient(
+    circle,
+    rgba(var(--color-white), 1) 0%,
+    rgba(var(--color-yellow), 1) 20%,
+    rgba(var(--color-orange), 1) 100%
+  );
+
+  cursor: pointer;
+  transition-timing-function: ease-in-out;
+  transition-duration: 3s;
+  transition-property: radial;
+}
+
+.card-exclusive .logo-course::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+
+  opacity: 0;
+  transition: all 1s ease-in-out;
+
+  background: radial-gradient(
+    circle,
+    rgba(var(--color-white), 1) 20%,
+    rgba(var(--color-yellow), 1) 100%,
+    rgba(var(--color-orange), 1) 100%
+  );
+}
+
+.card-exclusive .logo-course:hover::before {
+  opacity: 1;
+}
+
+.card-exclusive .logo-course img {
+  width: 72px;
+  padding: 10px;
+
+  border: 3px solid rgba(var(--color-yellow), 1);
+  border-radius: 30px;
+  box-shadow: 0px 0px 40px 30px rgba(var(--color-white), 0.5);
+
+  z-index: 1;
+}
+
+.card-exclusive .infos {
+  height: 120px;
+  width: 100%;
+}
+
+.card-exclusive .infos .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+  width: 100%;
+}
+
+.card-exclusive .infos .title h3 {
+  margin: 20px 0;
+  font-size: var(--font-size-medium);
+  color: rgba(var(--color-dark-green), 1);
+}

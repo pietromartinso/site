@@ -37,6 +37,25 @@
   gap: 20px;
 }
 
+.home .section-exclusive {
+  width: 1300px;
+  margin-top: 100px;
+}
+
+.home .section-exclusive p {
+  color: rgba(var(--color-dark-green));
+  font-weight: 600;
+}
+
+.home .section-exclusive .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 60px;
+  width: 100%;
+  gap: 20px;
+}
+
 .home .video {
   display: flex;
   flex-direction: column;
@@ -143,4 +162,42 @@
 
 .home .social-number .content .right .content button:hover {
   background-color: rgba(var(--color-light-blue));
+}
+
+.home .sobre {
+  width: 1300px;
+  height: 1100px;
+  margin-top: 90px;
+  background: radial-gradient(
+    circle,
+    rgba(22, 169, 168, 1) 11%,
+    rgba(15, 68, 74, 1) 69%
+  );
+
+  border-radius: 10px;
+}
+
+.home .sobre .top {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 200px;
+}
+
+.home .sobre .content {
+  height: 650px;
+}
+
+.home .sobre .content .left {
+  height: 100%;
+  width: 50%;
+}
+
+.home .sobre .content .right {
+  height: 100%;
+  width: 50%;
+}
+
+.home .sobre .bottom {
+  height: 250px;
 }

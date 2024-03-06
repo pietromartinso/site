@@ -1,4 +1,4 @@
-.header {
+  .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -11,9 +11,8 @@
   background: linear-gradient(
     90deg,
     rgba(15, 68, 74, 1) 0%,
-    rgba(153, 211, 219, 1) 0%,
-    rgba(15, 68, 74, 1) 33%,
-    rgba(15, 68, 74, 1) 100%
+    rgba(255, 255, 255, 1) 0%,
+    rgba(15, 68, 74, 1) 38%
   );
 }
 
@@ -50,7 +49,7 @@
 
   font-size: var(--font-size-medium);
   color: rgba(var(--color-orange), 1);
-  text-shadow: 2px 2px 1px rgba(var(--color-dark-green), 1);
+  text-shadow: 2px 2px 1px rgba( 0 0 0 );
   text-decoration: none;
 
   transition: ease-out 0.2s;
@@ -89,8 +88,10 @@
   cursor: pointer;
   transition: ease-in-out 0.2s;
 }
+
 .header .access .login:hover {
   background-color: rgba(var(--color-light-green), 0.5);
+  filter: drop-shadow(2px 2px 1px rgba(var(--color-orange)));
 }
 
 .header .access .login img {
@@ -101,6 +102,7 @@
   all: unset;
 
   color: rgba(var(--color-orange), 1);
+  text-shadow: 2px 2px 1px rgba(0 0 0);
   font-weight: 600;
 }
 
@@ -119,5 +121,6 @@
 
 .header .access .buy button:hover {
   background-color: rgba(var(--color-light-green), 1);
-  color: rgba(var(--color-white), 1);
+  color: rgba(var(--color-dark-green), 1);
+  text-shadow: none;
 }

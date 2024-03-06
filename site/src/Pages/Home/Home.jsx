@@ -9,6 +9,11 @@ import Solidity from "../../assets/solidity.png";
 import Python from "../../assets/python.png";
 import DataStructure from "../../assets/estrutura-dados.png";
 import CPlusPlus from "../../assets/c++.png";
+import CardExclusive from "../../Components/CardExclusives/CardsExclusive";
+import AulasExclusivas from "../../assets/aulas-exclusivas.png";
+import AulasParticulares from "../../assets/aulas-particulares.png";
+import Consultoria from "../../assets/consultoria.png";
+import Mentoria from "../../assets/carreira.png";
 
 function Home() {
   return (
@@ -63,6 +68,39 @@ function Home() {
           />
         </div>
       </section>
+      <section className="section-exclusive">
+        <h1>Serviços e conteúdos especiais</h1>
+        <p>
+          Entre em contato para eu entender como posso lhe ajudar da melhor
+          forma!
+        </p>
+        <div className="content">
+          <div>
+            <CardExclusive
+              title="Consultoria em Web3 / Blockchain"
+              img={Consultoria}
+            />
+          </div>
+          <div>
+            <CardExclusive
+              title="Mentoria de Carreira"
+              img={Mentoria}
+            />
+          </div>
+          <div>
+            <CardExclusive
+              title="Aulas Exclusivas"
+              img={AulasExclusivas}
+            />
+          </div>
+          <div>
+            <CardExclusive
+              title="Aulas Particulares"
+              img={AulasParticulares}
+            />
+          </div>
+        </div>
+      </section>
       <div className="video">
         <div className="top"></div>
         <div className="bot">
@@ -96,6 +134,38 @@ function Home() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="sobre">
+        <div className="top">
+          <h1>O título entra aqui</h1>
+        </div>
+        <div className="content">
+          <div className="left">
+            <div>
+              <h1>Texto Aqui</h1>
+              <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                totam commodi ab sapiente laudantium accusantium.
+              </h3>
+            </div>
+            <div>
+              <h1>Texto Aqui</h1>
+              <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                totam commodi ab sapiente laudantium accusantium.
+              </h3>
+            </div>
+            <div>
+              <h1>Texto Aqui</h1>
+              <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                totam commodi ab sapiente laudantium accusantium.
+              </h3>
+            </div>
+          </div>
+          <div className="right"></div>
+        </div>
+        <div className="bottom"></div>
       </div>
     </div>
   );
