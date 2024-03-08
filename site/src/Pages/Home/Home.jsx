@@ -1,71 +1,26 @@
 import CardCourses from "../../Components/CardCourses/CardCourses";
 import "./home.css";
-import LogicaPseudo from "../../assets/codigo.png";
-import LogicaC from "../../assets/c.png";
-import Git from "../../assets/git.png";
-import BlockChain from "../../assets/blockchain.png";
-import Ethereum from "../../assets/ethereum.png";
-import Solidity from "../../assets/solidity.png";
-import Python from "../../assets/python.png";
-import DataStructure from "../../assets/estrutura-dados.png";
-import CPlusPlus from "../../assets/c++.png";
 import CardExclusive from "../../Components/CardExclusives/CardsExclusive";
 import AulasExclusivas from "../../assets/aulas-exclusivas.png";
 import AulasParticulares from "../../assets/aulas-particulares.png";
 import Consultoria from "../../assets/consultoria.png";
 import Mentoria from "../../assets/carreira.png";
-
+import infosCourses from "./infos-courses";
+console.log(infosCourses);
 function Home() {
   return (
     <div className="home">
       <section>
         <h1>Conheça meus cursos</h1>
         <div className="home-courses">
-          <CardCourses
-            logo={LogicaPseudo}
-            textTitle={"Lógica de Programação em Pseudocódigo"}
-            textSubTitle={"Início imediato!"}
-          />
-          <CardCourses
-            logo={LogicaC}
-            textTitle={"Lógica de programação em C"}
-            textSubTitle={"Início imediato!"}
-          />
-          <CardCourses
-            logo={Git}
-            textTitle={"Controle de versão com Git & Github"}
-            textSubTitle={"Início imediato!"}
-          />
-          <CardCourses
-            logo={BlockChain}
-            textTitle={"Introdução à Tecnologia BLockchain"}
-            textSubTitle={"Em breve..."}
-          />
-          <CardCourses
-            logo={Ethereum}
-            textTitle={"Introdução ao Ethereum (Conceitual)"}
-            textSubTitle={"Início imediato!"}
-          />
-          <CardCourses
-            logo={Solidity}
-            textTitle={"Solidity: Smart Contracts Básico"}
-            textSubTitle={"Início imediato!"}
-          />
-          <CardCourses
-            logo={Python}
-            textTitle={"Lógica de Programação em Python"}
-            textSubTitle={"Início imediato!"}
-          />
-          <CardCourses
-            logo={DataStructure}
-            textTitle={"Estrutura de Dados para programadores"}
-            textSubTitle={"Em breve..."}
-          />
-          <CardCourses
-            logo={CPlusPlus}
-            textTitle={"Programação Orientada a Objetos em C++"}
-            textSubTitle={"Em breve..."}
-          />
+          {infosCourses.map((course, index) => (
+            <CardCourses
+              key={index}
+              logo={course.logo}
+              textTitle={course.textTitle}
+              textSubTitle={course.textSubTitle}
+            />
+          ))}
         </div>
       </section>
       <section className="section-exclusive">
@@ -82,22 +37,13 @@ function Home() {
             />
           </div>
           <div>
-            <CardExclusive
-              title="Mentoria de Carreira"
-              img={Mentoria}
-            />
+            <CardExclusive title="Mentoria de Carreira" img={Mentoria} />
           </div>
           <div>
-            <CardExclusive
-              title="Aulas Exclusivas"
-              img={AulasExclusivas}
-            />
+            <CardExclusive title="Aulas Exclusivas" img={AulasExclusivas} />
           </div>
           <div>
-            <CardExclusive
-              title="Aulas Particulares"
-              img={AulasParticulares}
-            />
+            <CardExclusive title="Aulas Particulares" img={AulasParticulares} />
           </div>
         </div>
       </section>
@@ -137,7 +83,7 @@ function Home() {
       </div>
       <div className="sobre">
         <div className="top">
-          <h1>O título entra aqui</h1>
+          <h1>Sobre</h1>
         </div>
         <div className="content">
           <div className="left">
@@ -163,9 +109,17 @@ function Home() {
               </h3>
             </div>
           </div>
-          <div className="right"></div>
+          <div className="right">
+            <img src="" alt="Uma imagem aqui" />
+          </div>
         </div>
-        <div className="bottom"></div>
+        <div className="bottom">
+          <h3>Mais informações de algo</h3>
+        </div>
+      </div>
+      <div className="testimony">
+        <h1>Depoimentos de alunos e alunas.</h1>
+        <div className="content"></div>
       </div>
     </div>
   );

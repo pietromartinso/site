@@ -185,6 +185,7 @@
 }
 
 .home .sobre .content {
+  display: flex;
   height: 650px;
 }
 
@@ -200,4 +201,13 @@
 
 .home .sobre .bottom {
   height: 250px;
+}
+
+.home .testimony {
+  display: flex;
+  justify-content: center;
+  width: 1300px;
+  margin-top: 100px;
+  padding-top: 100px;
+  background-color: rgba(var(--color-yellow));
 }
