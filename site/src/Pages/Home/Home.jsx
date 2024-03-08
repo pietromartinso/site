@@ -1,12 +1,9 @@
 import CardCourses from "../../Components/CardCourses/CardCourses";
 import "./home.css";
 import CardExclusive from "../../Components/CardExclusives/CardsExclusive";
-import AulasExclusivas from "../../assets/aulas-exclusivas.png";
-import AulasParticulares from "../../assets/aulas-particulares.png";
-import Consultoria from "../../assets/consultoria.png";
-import Mentoria from "../../assets/carreira.png";
 import infosCourses from "./infos-courses";
-console.log(infosCourses);
+import infosCardExclusive from "./infos-cardExclusive";
+
 function Home() {
   return (
     <div className="home">
@@ -30,21 +27,12 @@ function Home() {
           forma!
         </p>
         <div className="content">
-          <div>
+          {infosCardExclusive.map((cardExclusive, index) => (
             <CardExclusive
-              title="Consultoria em Web3 / Blockchain"
-              img={Consultoria}
+              title={cardExclusive.title}
+              img={cardExclusive.img}
             />
-          </div>
-          <div>
-            <CardExclusive title="Mentoria de Carreira" img={Mentoria} />
-          </div>
-          <div>
-            <CardExclusive title="Aulas Exclusivas" img={AulasExclusivas} />
-          </div>
-          <div>
-            <CardExclusive title="Aulas Particulares" img={AulasParticulares} />
-          </div>
+          ))}
         </div>
       </section>
       <div className="video">
