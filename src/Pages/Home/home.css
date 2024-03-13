@@ -6,7 +6,7 @@
 
   height: 100%;
   padding-top: 96px;
- 
+
   background: radial-gradient(
     circle,
     rgba(241, 187, 82, 0.1) 0%,
@@ -48,7 +48,7 @@
 .home .video {
   display: flex;
   flex-direction: column;
-  position: relative;
+
   width: 100%;
   height: 800px;
   margin-top: 50px;
@@ -60,19 +60,27 @@
 }
 
 .home .video .bot {
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: 60%;
   background-color: rgba(var(--color-dark-green));
 }
 
-.home .video iframe {
+.home .video .bot .content {
+  position: relative;
+  width: 1300px;
+}
+
+.home .video .bot .content iframe {
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
 
-  width: 1300px;
-  height: 100%;
+  width: 100%;
+  min-width: 320px;
+  height: 800px;
 
   border: solid 10px rgba(var(--color-orange));
   border-radius: 10px;
@@ -156,16 +164,16 @@
 .home section {
   display: flex;
   flex-direction: column;
-  align-items: center;  
+  align-items: center;
   width: 1300px;
   margin-top: 50px;
 }
 
 .home .courses h1 {
- margin: 60px 0;
- font-weight: 900;
- font-size: var(--font-size-biggest);
- color: rgba(var(--color-dark-green), 1);
+  margin: 60px 0;
+  font-weight: 900;
+  font-size: var(--font-size-biggest);
+  color: rgba(var(--color-dark-green), 1);
 }
 
 .home section .home-courses {
@@ -251,6 +259,7 @@
 
 .home .about .content .right img {
   position: absolute;
+  width: 100%;
   right: -50px;
   border: 10px solid rgba(var(--color-dark-green));
   border-radius: 10px;
@@ -271,7 +280,11 @@
   padding: 100px 20px 20px 20px;
   border-radius: 10px;
 
-  background: linear-gradient(0deg, rgba(241,187,82,1) 0%, rgba(246,142,79,1) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(241, 187, 82, 1) 0%,
+    rgba(246, 142, 79, 1) 100%
+  );
 }
 
 .home .testimony h1 {
@@ -302,7 +315,7 @@
 .home .faq .right {
   display: flex;
   justify-content: center;
-  width: 50%;  
+  width: 50%;
 }
 
 .home .faq .right ol {
@@ -317,6 +330,43 @@
   width: 100%;
   padding-left: 60px;
 
-
   border-top: 1px solid rgba(var(--color-dark-green));
+}
+
+@media (max-width: 1300px) {
+  .home .video {
+    height: 600px;
+  }
+
+  .home .video .bot .content iframe {
+    width: 800px;
+    height: 600px;
+  }
+
+  .home .social-number .content {
+    width: 800px;
+  }
+
+  .home section .home-courses{
+    width: 1000px;
+  }
+
+  .home .about {
+    width: 800px;
+    height: 900px;
+  }
+
+  .home .testimony {
+    width: 900px;
+  }
+
+  .home .testimony .content {
+    display: flex;
+    justify-content: center;
+  }
+
+  .home .faq {
+    align-items: center;
+    flex-direction: column;
+  }
 }

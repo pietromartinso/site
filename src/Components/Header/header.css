@@ -85,7 +85,6 @@
 
   height: 100%;
   width: 180px;
-  gap: 10px;
   border-radius: 10px;
 
   cursor: pointer;
@@ -94,6 +93,13 @@
 
 .header .access .login:hover {
   background-color: rgba(var(--color-light-green), 0.5);
+}
+
+.header .access .login a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
 }
 
 .header .access .login img {

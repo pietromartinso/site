@@ -96,3 +96,8 @@
   text-shadow: 0 0 2px rgba(var(--color-dark-green), 1);
 }
 
+@media (max-width: 1330px) {
+  .footer {
+    padding: 0 30px;
+  }
+}

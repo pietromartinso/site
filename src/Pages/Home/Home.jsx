@@ -18,15 +18,15 @@ function Home() {
       <div className="video">
         <div className="top"></div>
         <div className="bot">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/Wh6ZZf707TQ?si=yERkgBT-m1n5pu54"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
+          <div className="content">
+            <iframe
+              src="https://www.youtube.com/embed/Wh6ZZf707TQ?si=yERkgBT-m1n5pu54"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
       </div>
       <div className="social-number">
@@ -131,9 +131,9 @@ function Home() {
         </div>
         <div className="right">
           <ol>
-            {InfosFaq.map((faq, index) =>
+            {InfosFaq.map((faq, index) => (
               <li>{faq.text}</li>
-            )}
+            ))}
           </ol>
         </div>
       </div>

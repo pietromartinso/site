@@ -41,8 +41,10 @@ function Header() {
         </ul>
         <div className="access">
           <div className="login">
-            <img src={UserIcon} alt="User Icon" />
-            <button>FAZER LOGIN</button>
+            <a href="https://profpietrocursos.membertizze.com.br/login" target="Blanck_">
+              <img src={UserIcon} alt="User Icon" />
+              <button>FAZER LOGIN</button>
+            </a>
           </div>
           <div className="buy">
             <button>ASSINAR AGORA</button>
