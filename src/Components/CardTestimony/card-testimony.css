@@ -1,0 +1,23 @@
+.card-testimony {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 400px;
+    padding: 10px;
+
+    border: 1px solid rgba(var(--color-dark-green));
+    border-radius: 10px;
+}
+
+.card-testimony h4 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: rgba(var(--color-dark-green));
+}
+
+.card-testimony p {
+    letter-spacing: 1px;
+    text-align: center;
+    color: rgba(var(--color-dark-green));
+}

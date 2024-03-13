@@ -8,7 +8,6 @@
 
   border-radius: 10px;
   border: 1px solid rgba(var(--color-dark-green), 1);
-  box-shadow: 0 0 8px 1px rgba(var(--color-dark-green), 1);
 }
 
 .card-courses .container {
@@ -27,7 +26,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
 
   width: 100%;
   height: 145px;
@@ -39,34 +37,6 @@
     rgba(var(--color-light-green), 1) 20%,
     rgba(var(--color-dark-green), 1) 100%
   );
-
-  cursor: pointer;
-  transition-timing-function: ease-in-out;
-  transition-duration: 3s;
-  transition-property: radial;
-}
-
-.card-courses .logo-course::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-
-  opacity: 0;
-  transition: all 1s ease-in-out;
-
-  background: radial-gradient(
-    circle,
-    rgba(var(--color-white), 1) 0%,
-    rgba(var(--color-light-green), 1) 90%,
-    rgba(var(--color-dark-green), 1) 100%
-  );
-}
-
-.card-courses .logo-course:hover::before {
-  opacity: 1;
 }
 
 .card-courses .logo-course img {
@@ -76,8 +46,6 @@
   border: 3px solid rgba(var(--color-light-green), 1);
   border-radius: 30px;
   box-shadow: 0px 0px 40px 30px rgba(var(--color-white), 0.5);
-
-  z-index: 1;
 }
 
 .card-courses .infos {

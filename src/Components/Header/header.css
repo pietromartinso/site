@@ -1,23 +1,27 @@
-  .header {
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
 
-  width: 100vw;
+  width: 100%;
   height: 96px;
 
   padding: 0 40px;
-  border-bottom: 1px solid rgba(var(--color-dark-green), 1);
-  background: linear-gradient(
-    90deg,
-    rgba(15, 68, 74, 1) 0%,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(15, 68, 74, 1) 38%
-  );
+  background-color: rgba(var(--color-gray), 1);
+
+  z-index: 2;
 }
 
 .header img {
-  width: 130px;
+  width: 260px;
+}
+
+.header .hamburger {
+  display: none;
+  width: 50px;
+  margin: 0 50px;
+  cursor: pointer;
 }
 
 .header .navbar {
@@ -34,7 +38,7 @@
   justify-content: space-between;
 
   height: 50px;
-  min-width: 701px;
+  min-width: 500px;
 
   padding: 0 20px;
 }
@@ -48,8 +52,7 @@
   padding: 0 12px;
 
   font-size: var(--font-size-medium);
-  color: rgba(var(--color-orange), 1);
-  text-shadow: 2px 2px 1px rgba( 0 0 0 );
+  color: rgba(var(--color-dark-green), 1);
   text-decoration: none;
 
   transition: ease-out 0.2s;
@@ -91,7 +94,6 @@
 
 .header .access .login:hover {
   background-color: rgba(var(--color-light-green), 0.5);
-  filter: drop-shadow(2px 2px 1px rgba(var(--color-orange)));
 }
 
 .header .access .login img {
@@ -101,8 +103,7 @@
 .header .access button {
   all: unset;
 
-  color: rgba(var(--color-orange), 1);
-  text-shadow: 2px 2px 1px rgba(0 0 0);
+  color: rgba(var(--color-dark-green), 1);
   font-weight: 600;
 }
 
@@ -113,14 +114,41 @@
 
   height: 38px;
   width: 160px;
-  border: 1px solid rgba(var(--color-orange), 1);
+
   border-radius: 10px;
 
   cursor: pointer;
+  border: 1px solid rgba(var(--color-dark-green), 1);
 }
 
 .header .access .buy button:hover {
   background-color: rgba(var(--color-light-green), 1);
   color: rgba(var(--color-dark-green), 1);
   text-shadow: none;
+}
+
+@media (max-width: 1300px) {
+  .header .navbar ul {
+    display: none;
+  }
+
+  .header .logo {
+    display: none;
+  }
+
+  .header .hamburger {
+    display: flex;
+  }
+
+  .header .access {
+    width: 300px;
+  }
+
+  .header .access .login {
+    width: 40px;
+  }
+
+  .header .access .login button {
+    display: none;
+  }
 }
