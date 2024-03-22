@@ -4,7 +4,7 @@
   justify-content: space-between;
   position: fixed;
 
-  width: 100%;
+  width: 100vw;
   height: 96px;
 
   padding: 0 40px;
@@ -156,5 +156,29 @@
 
   .header .access .login button {
     display: none;
+  }
+
+  @media (max-width: 320px) {
+    .header {
+      padding: 0;
+    }
+
+    .header .menu-hamburg {
+      width: 50px;
+    }
+
+    .header .menu-hamburg img {
+      margin: 0 0 0 10px;
+    }
+
+    .header .navbar {
+      width: 270px;
+    }
+
+    .header .access {
+      border: none;
+      padding: 0;
+      width: 250px;
+    }
   }
 }

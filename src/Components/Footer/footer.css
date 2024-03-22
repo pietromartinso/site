@@ -101,3 +101,11 @@
     padding: 0 30px;
   }
 }
+
+@media (max-width: 320px) {
+  .footer .bottom {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}

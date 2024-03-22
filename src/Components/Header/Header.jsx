@@ -15,7 +15,7 @@ function Header() {
   return (
     <div className="header" id="home">
       <img src={Logo} alt="Logo" className="logo" />
-      <div>
+      <div className="menu-hamburg">
         <img
           src={IconHamburger}
           alt="Menu"

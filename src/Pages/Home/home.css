@@ -16,6 +16,7 @@
 }
 
 .home h1 {
+  text-align: center;
   font-size: var(--font-size-large);
   font-weight: 900;
 }
@@ -69,7 +70,8 @@
 
 .home .video .bot .content {
   position: relative;
-  width: 1300px;
+  width: 100%;
+  max-width: 1300px;
 }
 
 .home .video .bot .content iframe {
@@ -79,8 +81,10 @@
   transform: translateX(-50%);
 
   width: 100%;
-  min-width: 320px;
+  max-width: 1300px;
+  min-width: 300px;
   height: 800px;
+  min-height: 100px;
 
   border: solid 10px rgba(var(--color-orange));
   border-radius: 10px;
@@ -105,8 +109,9 @@
 .home .social-number .content {
   display: flex;
   justify-content: space-between;
-  width: 1300px;
+  max-width: 1300px;
   height: 100%;
+  padding: 0 20px;
 }
 
 .home .social-number .content .left {
@@ -165,8 +170,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1300px;
+  width: 100%;
   margin-top: 50px;
+}
+
+.home .courses {
+  width: 100%;
+  max-width: 1300px;
 }
 
 .home .courses h1 {
@@ -180,22 +190,25 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
 
-  gap: 20px;
+  gap: 20px;  
 }
 
 .home .section-exclusive {
-  width: 1300px;
+  width: 100vw;
   margin-top: 100px;
+
+  padding: 0 20px;
 }
 
 .home .section-exclusive h1 {
+  text-align: center;
   font-size: var(--font-size-biggest);
   color: rgba(var(--color-orange));
 }
 
 .home .section-exclusive p {
+  text-align: center;
   color: rgba(var(--color-dark-green));
   font-weight: 600;
 }
@@ -210,9 +223,12 @@
 }
 
 .home .about {
-  width: 1300px;
-  height: 1100px;
+  width: 100%;
+  max-width: 1300px;
+
   margin-top: 90px;
+  padding: 0 20px;
+
   background: radial-gradient(
     circle,
     rgba(22, 169, 168, 1) 11%,
@@ -260,7 +276,6 @@
 .home .about .content .right img {
   position: absolute;
   width: 100%;
-  right: -50px;
   border: 10px solid rgba(var(--color-dark-green));
   border-radius: 10px;
 }
@@ -274,7 +289,8 @@
   flex-direction: column;
   align-items: center;
 
-  width: 1300px;
+  width: 100%;
+  max-width: 1300px;
   margin-top: 100px;
 
   padding: 100px 20px 20px 20px;
@@ -295,14 +311,18 @@
 
 .home .testimony .content {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
 }
 
 .home .faq {
   display: flex;
-  width: 1300px;
+  width: 100%;
+  max-width: 1300px;
+
   margin: 100px 0;
+  padding: 0 20px;
   color: rgba(var(--color-dark-green));
 }
 
@@ -333,40 +353,152 @@
   border-top: 1px solid rgba(var(--color-dark-green));
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1350px) {
   .home .video {
-    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 550px;
   }
 
   .home .video .bot .content iframe {
-    width: 800px;
-    height: 600px;
+    width: 950px;
+    height: 550px;
   }
 
-  .home .social-number .content {
-    width: 800px;
+  .home .video .top {
+    height: 100px;
+  }
+}
+
+@media (max-width: 980px) {
+  .home .video {
+    height: 450px;
   }
 
-  .home section .home-courses{
-    width: 1000px;
+  .home .video .bot .content iframe {
+    width: 700px;
+    height: 450px;
   }
 
-  .home .about {
-    width: 800px;
-    height: 900px;
+  .home .video .top {
+    height: 100px;
   }
 
-  .home .testimony {
-    width: 900px;
-  }
-
-  .home .testimony .content {
-    display: flex;
+  .home .social-number .content .right {
     justify-content: center;
+    width: 500px;
   }
 
-  .home .faq {
-    align-items: center;
-    flex-direction: column;
+  .home .social-number .content .left {
+    display: none;
+  }
+
+  @media (max-width: 730px) {
+    .home .video {
+      height: 250px;
+    }
+  
+    .home .video .bot .content iframe {
+      width: 400px;
+      height: 250px;
+    }
+  
+    .home .video .top {
+      display: none;
+    }
+  
+    .home .social-number .content .right {
+      justify-content: center;
+      width: 500px;
+    }
+
+    .home .social-number .content {
+      padding: 0;
+    }
+  }
+
+  @media (max-width: 570px) {
+    .home .video {
+      height: 250px;
+    }
+  
+    .home .video .bot .content iframe {
+      width: 400px;
+      height: 250px;
+    }
+  
+    .home .video .top {
+      display: none;
+    }
+  
+    .home .social-number .content .right {
+      justify-content: center;
+      width: 390px;
+    }
+
+    .home .social-number .content {
+      padding: 0;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .home .video {
+      height: 200px;
+    }
+  
+    .home .video .bot .content iframe {
+      width: 300px;
+      height: 220px;
+    }
+  
+    .home .video .top {
+      display: none;
+    }
+
+    .home .social-number .content .right {
+      justify-content: center;
+      width: 300px;
+    }
+
+    .home section .home-courses {
+      width: 320px;
+    }
+
+    .home .about .top {
+      height: 100px;
+    }
+
+    .home .about .content .right {
+      display: none;
+    }
+
+    .home .about .content .left {
+      width: 100%;
+    }
+
+    .home .about .bottom {
+      height: 100px;
+    }
+
+    .home .testimony .content {
+      width: 100%;
+    }
+
+    .home .faq {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .home .faq .left,
+    .home .faq .right {
+      width: 100%;
+    }
+
+    .home .faq .right ol li {
+      text-align: center;
+      padding: 0;
+    }
   }
 }
