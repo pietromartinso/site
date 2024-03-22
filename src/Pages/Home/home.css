@@ -219,6 +219,7 @@
   justify-content: center;
   margin-top: 60px;
   width: 100%;
+  max-width: 1300px;
   gap: 20px;
 }
 
@@ -440,9 +441,18 @@
     .home .social-number .content {
       padding: 0;
     }
+
+    .home .faq .right ol li {
+      text-align: center;
+      padding: 0;
+    }
   }
 
-  @media (max-width: 320px) {
+  @media (max-width: 425px) {
+    .home h1 {
+      font-size: 32px;
+    }
+
     .home .video {
       height: 200px;
     }

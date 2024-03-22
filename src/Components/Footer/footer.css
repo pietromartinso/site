@@ -102,10 +102,14 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
   .footer .bottom {
     display: flex;
     flex-direction: column;
     text-align: center;
+  }
+
+  .footer .bottom a:last-child {
+    margin-bottom: 10px;
   }
 }
