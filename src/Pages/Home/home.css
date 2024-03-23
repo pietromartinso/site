@@ -36,13 +36,13 @@
   margin-top: 50px;
   font-weight: 900;
   font-family: var(--font-one);
-  color: rgba(var(--color-orange));
+  color: rgba(var(--color-dark-green));
   font-size: var(--font-size-biggest);
 }
 
 .home .title h2 {
   font-family: var(--font-one);
-  color: rgba(var(--color-orange));
+  color: rgba(var(--color-light-green));
   font-size: var(--font-size-medium);
 }
 
@@ -86,7 +86,7 @@
   height: 800px;
   min-height: 100px;
 
-  border: solid 10px rgba(var(--color-orange));
+  border: solid 10px rgba(var(--color-light-green));
   border-radius: 10px;
 }
 
@@ -99,11 +99,7 @@
   width: 100%;
 
   color: rgba(var(--color-dark-green));
-  background: radial-gradient(
-    circle,
-    rgba(241, 187, 82, 1) 0%,
-    rgba(246, 142, 79, 1) 100%
-  );
+  background: rgba(var(--color-light-blue));
 }
 
 .home .social-number .content {
@@ -156,14 +152,14 @@
   font-size: var(--font-size-medium);
   font-weight: 900;
   border: 2px solid rgba(var(--color-dark-green));
-  background-color: rgba(var(--color-light-green));
+  background-color: rgba(var(--color-yellow));
 
   cursor: pointer;
   transition: ease-in-out 0.2s;
 }
 
 .home .social-number .content .right .content button:hover {
-  background-color: rgba(var(--color-light-blue));
+  background-color: rgba(var(--color-orange));
 }
 
 .home section {
@@ -204,7 +200,7 @@
 .home .section-exclusive h1 {
   text-align: center;
   font-size: var(--font-size-biggest);
-  color: rgba(var(--color-orange));
+  color: rgba(var(--color-dark-green));
 }
 
 .home .section-exclusive p {
@@ -249,8 +245,7 @@
 .home .about .top h1 {
   font-weight: 900;
   letter-spacing: 2px;
-  color: rgba(var(--color-orange));
-  text-shadow: 3px 3px 1px rgba(var(--color-dark-green));
+  color: rgba(var(--color-black));  
 }
 
 .home .about .content {
@@ -297,11 +292,7 @@
   padding: 100px 20px 20px 20px;
   border-radius: 10px;
 
-  background: linear-gradient(
-    0deg,
-    rgba(241, 187, 82, 1) 0%,
-    rgba(246, 142, 79, 1) 100%
-  );
+  background-color: rgba(var(--color-light-blue));
 }
 
 .home .testimony h1 {

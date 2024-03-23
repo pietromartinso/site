@@ -14,7 +14,7 @@ function Header() {
 
   return (
     <div className="header" id="home">
-      <img src={Logo} alt="Logo" className="logo" />
+      <a href="http://localhost:3000/"><img src={Logo} alt="Logo" className="logo" /></a>
       <div className="menu-hamburg">
         <img
           src={IconHamburger}

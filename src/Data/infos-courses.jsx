@@ -13,46 +13,55 @@ const infosCourses = [
     logo: LogicaPseudo,
     textTitle: "Lógica de Programação em Pseudocódigo",
     textSubTitle: "Início imediato!",
+    link: "/courses",
   },
   {
     logo: LogicaC,
     textTitle: "Lógica de programação em C",
     textSubTitle: "Início imediato!",
+    link: "/courses",
   },
   {
     logo: Git,
     textTitle: "Controle de versão com Git & Github",
     textSubTitle: "Início imediato!",
+    link: "/courses",
   },
   {
     logo: BlockChain,
     textTitle: "Introdução à Tecnologia Blockchain",
     textSubTitle: "Em breve...",
+    link: "/courses",
   },
   {
     logo: Ethereum,
     textTitle: "Introdução ao Ethereum (Conceitual)",
     textSubTitle: "Início imediato!",
+    link: "/courses",
   },
   {
     logo: Solidity,
     textTitle: "Solidity: Smart Contracts Básico",
     textSubTitle: "Início imediato!",
+    link: "/courses",
   },
   {
     logo: Python,
     textTitle: "Lógica de Programação em Python",
     textSubTitle: "Início imediato!",
+    link: "/courses",
   },
   {
     logo: DataStructure,
     textTitle: "Estrutura de Dados para programadores",
     textSubTitle: "Em breve...",
+    link: "/courses",
   },
   {
     logo: CPlusPlus,
     textTitle: "Programação Orientada a Objetos em C++",
     textSubTitle: "Em breve...",
+    link: "/courses",
   },
 ];
 

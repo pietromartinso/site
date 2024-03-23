@@ -75,7 +75,7 @@
   padding: 0 20px;
   gap: 20px;
 
-  border-left: 1px solid rgba(var(--color-orange), 1);
+  border-left: 1px solid rgba(var(--color-light-green), 1);
 }
 
 .header .access .login {

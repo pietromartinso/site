@@ -1,12 +1,15 @@
+import { Link } from "react-router-dom";
 import "./card-courses.css";
+import { useTypeCourse } from "../../Context/typeCourseContext";
 
+function CardCourses({ index, logo, textTitle, textSubTitle, link }) {
+  const { typeSelected } = useTypeCourse();
 
-function CardCourses({ logo, textTitle, textSubTitle}) {
   return (
     <div className="card-courses">
       <div className="container">
         <div className="logo-course">
-            <img src={logo} alt="Icon Logic" />
+          <img src={logo} alt="Icon Logic" />
         </div>
         <div className="infos">
           <div className="title">
@@ -16,7 +19,7 @@ function CardCourses({ logo, textTitle, textSubTitle}) {
           <div className="summary"></div>
         </div>
         <div className="see-details">
-            <button>{`VER DETALHES`}</button>
+          <Link to={link} onClick={() => typeSelected(index)}>{`VER DETALHES`}</Link>
         </div>
       </div>
     </div>

@@ -55,9 +55,11 @@ function Home() {
           {infosCourses.map((course, index) => (
             <CardCourses
               key={index}
+              index={index}
               logo={course.logo}
               textTitle={course.textTitle}
               textSubTitle={course.textSubTitle}
+              link={course.link}
             />
           ))}
         </div>
@@ -132,7 +134,7 @@ function Home() {
         <div className="right">
           <ol>
             {InfosFaq.map((faq, index) => (
-              <li>{faq.text}</li>
+              <li key={index}>{faq.text}</li>
             ))}
           </ol>
         </div>

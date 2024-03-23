@@ -83,7 +83,7 @@
   width: 100%;
 }
 
-.card-courses .see-details button {
+.card-courses .see-details a {
   all: unset;
   display: flex;
   align-items: center;
@@ -93,7 +93,7 @@
   width: 100%;
 
   border: 1px solid rgba(var(--color-dark-green));
-  background-color: rgba(var(--color-light-green), 0.6);
+  background-color: rgba(var(--color-yellow), 1);
   border-radius: 10px;
 
   color: rgba(var(--color-dark-green), 1);
@@ -103,6 +103,6 @@
   transition: ease-in-out 0.2s;
 }
 
-.card-courses .see-details button:hover {
+.card-courses .see-details a:hover {
   background-color: rgba(var(--color-orange), 1);
 }
