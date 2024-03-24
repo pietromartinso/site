@@ -11,6 +11,7 @@ export default function TypeCourseContextProvider({ children }) {
 
   function typeSelected(type) {
     setType(type)
+    localStorage.setItem("page", type)
   }
 
   return (

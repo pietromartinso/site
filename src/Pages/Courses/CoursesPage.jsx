@@ -1,20 +1,18 @@
-import "./courses-page.css";
 import infosPagesCourses from "../../Data/infos-courses-pages";
-import { useTypeCourse } from "../../Context/typeCourseContext";
+import "./courses-page.css";
 
 function CoursesPage() {
-  const { type } = useTypeCourse();
+  const type = localStorage.getItem("page");
 
   return (
-    <div className="courses-page">
+    <div className="courses-page" id="inicio">
       <h1>{infosPagesCourses[type].title1}</h1>
       <section>
         <div className="video">
           <div>
             <iframe
               src={infosPagesCourses[type].video}
-              title="video"
-              frameborder="0"
+              title="video" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>

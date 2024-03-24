@@ -44,7 +44,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  
+
   background-color: rgba(var(--color-gray));
   border-bottom: 1px solid rgba(var(--color-dark-green));
 }
@@ -56,7 +56,6 @@
 
   width: 100%;
   max-width: 1000px;
-
 }
 
 .courses-page .container .ebook .button {
@@ -81,9 +80,9 @@
   font-weight: 600;
   border: 1px solid rgba(var(--color-dark-green));
   background-color: rgba(var(--color-yellow));
-  
+
   cursor: pointer;
-  transition: ease-in-out .1s;
+  transition: ease-in-out 0.1s;
 }
 
 .courses-page .container .ebook button:hover {
@@ -149,9 +148,9 @@
   font-weight: 600;
   border: 1px solid rgba(var(--color-dark-green));
   background-color: rgba(var(--color-yellow));
-  
+
   cursor: pointer;
-  transition: ease-in-out .1s;
+  transition: ease-in-out 0.1s;
 }
 
 .courses-page .content button:hover {
@@ -167,7 +166,6 @@
 
   margin-top: 20px;
   line-height: 1.5;
-
 }
 
 .courses-page .content p {
@@ -189,14 +187,18 @@
 }
 
 .courses-page .faq p:nth-child(2) {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .courses-page .faq li {
-    margin-bottom: 10px;
-    background-color: rgba(var(--color-light-blue));
+  margin-bottom: 10px;
+  background-color: rgba(var(--color-light-blue));
 }
 
 .courses-page .faq p {
   margin-bottom: 20px;
+}
+
+@media (max-width: 425px) {
+  
 }
