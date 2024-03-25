@@ -104,5 +104,6 @@
 }
 
 .card-courses .see-details a:hover {
-  background-color: rgba(var(--color-orange), 1);
+  background-color: rgba(var(--color-dark-green), 1);
+  color: rgba(var(--color-white), 1);
 }

@@ -159,7 +159,8 @@
 }
 
 .home .social-number .content .right .content button:hover {
-  background-color: rgba(var(--color-orange));
+  background-color: rgba(var(--color-dark-green));
+  color: rgba(var(--color-white));
 }
 
 .home section {

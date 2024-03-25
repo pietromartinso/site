@@ -86,7 +86,8 @@
 }
 
 .courses-page .container .ebook button:hover {
-  background-color: rgba(var(--color-orange));
+  background-color: rgba(var(--color-dark-green));
+  color: rgba(var(--color-white), 1);
 }
 
 .courses-page .container .ebook p {
@@ -154,7 +155,8 @@
 }
 
 .courses-page .content button:hover {
-  background-color: rgba(var(--color-orange));
+  background-color: rgba(var(--color-dark-green));
+  color: rgba(var(--color-white), 1);
 }
 
 .courses-page .content .text {
@@ -200,5 +202,4 @@
 }
 
 @media (max-width: 425px) {
-  
 }
