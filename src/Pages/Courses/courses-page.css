@@ -8,8 +8,9 @@
 
 .courses-page h1 {
   text-align: center;
-  width: 800px;
+  max-width: 800px;
   margin: 30px 0;
+  padding: 0 10px;
 
   font-size: 36px;
   font-weight: 900;
@@ -56,6 +57,7 @@
 
   width: 100%;
   max-width: 1000px;
+  padding: 0 10px;
 }
 
 .courses-page .container .ebook .button {
@@ -67,11 +69,12 @@
 .courses-page .container .ebook button {
   all: unset;
   display: flex;
-  justify-content: center;
   align-items: center;
+  text-align: center;
 
-  width: 500px;
+  max-width: 500px;
   height: 50px;
+  padding: 0 10px;
 
   margin: 50px 0;
   border-radius: 20px;
@@ -116,7 +119,6 @@
   justify-content: center;
 
   width: 100%;
-  height: 120px;
   background-color: rgba(var(--color-white));
 }
 
@@ -136,13 +138,14 @@
 .courses-page .content button {
   all: unset;
   display: flex;
-  justify-content: center;
+  text-align: center;
   align-items: center;
 
-  width: 500px;
+  max-width: 500px;
   height: 50px;
 
   margin: 50px 0;
+  padding: 0 10px;
   border-radius: 20px;
 
   color: rgba(var(--color-dark-green));
@@ -167,6 +170,7 @@
   max-width: 1000px;
 
   margin-top: 20px;
+  padding: 0 10px;
   line-height: 1.5;
 }
 
@@ -177,6 +181,7 @@
 .courses-page .faq {
   width: 100%;
   max-width: 1000px;
+  padding: 0 10px;
   line-height: 1.5;
 }
 
@@ -201,5 +206,63 @@
   margin-bottom: 20px;
 }
 
+@media (max-width: 1024px) {
+  .courses-page section .video iframe {
+    width: 768px;
+    height: 430px;
+  }
+
+  .courses-page section .video {
+    height: 480px;
+  }
+}
+
+@media (max-width: 768px) {
+  .courses-page section .video iframe {
+    width: 650px;
+    height: 364px;
+  }
+
+  .courses-page section .video {
+    height: 400px;
+  }
+}
+
+@media (max-width: 650px) {
+  .courses-page section .video iframe {
+    width: 500px;
+    height: 280px;
+  }
+
+  .courses-page section .video {
+    height: 350px;
+  }
+}
+
+@media (max-width: 500px) {
+  .courses-page section .video iframe {
+    width: 425px;
+    height: 238px;
+  }
+
+  .courses-page section .video {
+    height: 350px;
+  }
+}
+
 @media (max-width: 425px) {
+  .courses-page h1 {
+    font-size: 24px;
+  }
+
+  .courses-page section .video {
+    height: 250px;
+  }
+
+  .courses-page section .video iframe {
+    width: 320px;
+    height: 179px;
+    border-radius: 5px;
+    border: 10px solid rgba(var(--color-dark-green));
+  }
 }

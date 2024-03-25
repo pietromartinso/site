@@ -23,7 +23,7 @@ function Home() {
               src="https://www.youtube.com/embed/Wh6ZZf707TQ?si=yERkgBT-m1n5pu54"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </div>
         </div>
@@ -72,6 +72,7 @@ function Home() {
         <div className="content">
           {infosCardExclusive.map((cardExclusive, index) => (
             <CardExclusive
+              key={index}
               title={cardExclusive.title}
               img={cardExclusive.img}
             />

@@ -14,7 +14,7 @@ function CoursesPage() {
               src={infosPagesCourses[type].video}
               title="video" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </div>
         </div>

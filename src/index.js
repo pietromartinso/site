@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
@@ -18,7 +18,7 @@ const ScrollToTop = () => {
   return null;
 };
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = createRoot(document.getElementById("root")); // Mudança aqui
 root.render(
   <React.StrictMode>
     <Router>
