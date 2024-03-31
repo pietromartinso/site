@@ -43,7 +43,7 @@
 .home .title h2 {
   font-family: var(--font-one);
   color: rgba(var(--color-light-green));
-  font-size: var(--font-size-medium);
+  font-size: var(--font-size-large);
 }
 
 .home .video {

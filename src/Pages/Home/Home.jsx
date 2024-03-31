@@ -22,7 +22,8 @@ function Home() {
     <div className="home" id="inicio">
       <div className="title">
         <h1>Conheça meus cursos</h1>
-        <h2 id="sobre">Aulas de programação que você entende de verdade.</h2>
+        <h2 id="sobre">Aulas de programação que você entende de verdade:</h2>
+        <h2>o equilíbrio entre conceitos didáticos e exemplos práticos de fixação</h2>
       </div>
       <div className="video">
         <div className="top"></div>
