@@ -35,9 +35,9 @@ function Header() {
           <li>
             <a href="#courses">Cursos</a>
           </li>
-          <li>
+          {/* <li>
             <a href="#servicos">Serviços</a>
-          </li>
+          </li> */}
         </ul>
         <div className="access">
           <div className="login">
@@ -46,9 +46,9 @@ function Header() {
               <button>FAZER LOGIN</button>
             </a>
           </div>
-          <div className="buy">
+          {/* <div className="buy">
             <button>ASSINAR AGORA</button>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

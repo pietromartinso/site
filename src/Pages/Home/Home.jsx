@@ -13,7 +13,7 @@ function Home() {
     <div className="home" id="inicio">
       <div className="title">
         <h1>Conheça meus cursos</h1>
-        <h2 id="sobre">Lorem ipsum dolor sit amet.</h2>
+        <h2 id="sobre">Aulas de programação que você entende de verdade.</h2>
       </div>
       <div className="video">
         <div className="top"></div>
@@ -32,12 +32,12 @@ function Home() {
         <div className="content">
           <div className="left">
             <div>
-              <h2>Mais de X alunos pelo mundo.</h2>
-              <h2>Xh de conteúdo.</h2>
+              <h2>40K+ alunos(as).</h2>
+              <h2>Professor on-line no ensino superior</h2>
             </div>
             <div>
-              <h2>X certificados emitidos.</h2>
-              <h2>Xh de conteúdo.</h2>
+              <h2>+1.5 MM visualizações</h2>
+              <h2>Aulas gratuitas no YouTube</h2>
             </div>
           </div>
           <div className="right">
@@ -47,6 +47,7 @@ function Home() {
             </div>
           </div>
         </div>
+
       </div>
       <section className="courses" id="courses">
         <h1>Cursos</h1>
@@ -63,7 +64,7 @@ function Home() {
           ))}
         </div>
       </section>
-      <section className="section-exclusive" id="servicos">
+      {/* <section className="section-exclusive" id="servicos">
         <h1>Serviços e conteúdos especiais</h1>
         <p>
           Entre em contato para eu entender como posso lhe ajudar da melhor
@@ -78,32 +79,29 @@ function Home() {
             />
           ))}
         </div>
-      </section>
+      </section> */}
       <div className="about">
         <div className="top">
-          <h1>Sobre</h1>
+          <h1>Prof. Pietro Martins de Oliveira</h1>
         </div>
         <div className="content">
           <div className="left">
             <div>
-              <h2>Texto Aqui</h2>
+              <h2>Profissional de TI desde 2007</h2>
               <h3>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-                totam commodi ab sapiente laudantium accusantium.
+                Pietro possui vasta experiência no mercado de Tecnologia da Informação, tendo atuado em diversos projetos e áreas.
               </h3>
             </div>
             <div>
-              <h2>Texto Aqui</h2>
+              <h2>Desenvolvedor de Software Sênior</h2>
               <h3>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-                totam commodi ab sapiente laudantium accusantium.
+                Programador full stack, já atuou com linguagens como C, C++, C#, Java, Python, HTML, CSS, JavaScript/TypeScript, Go, Solidity.
               </h3>
             </div>
             <div>
-              <h2>Texto Aqui</h2>
+              <h2>Professor no Ensino Superior</h2>
               <h3>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-                totam commodi ab sapiente laudantium accusantium.
+                Dá aulas de programação a nível técnico e superior. Coordenador de cursos de graduação e pós graduação.
               </h3>
             </div>
           </div>
@@ -111,9 +109,9 @@ function Home() {
             <img src={FotoPietro} alt="Imagem" />
           </div>
         </div>
-        <div className="bottom">
+        {/* <div className="bottom">
           <h3>Mais informações de algo</h3>
-        </div>
+        </div> */}
       </div>
       <div className="testimony" id="depoimentos">
         <h1>Depoimentos de alunos e alunas.</h1>

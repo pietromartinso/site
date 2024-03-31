@@ -6,9 +6,11 @@
 }
 
 @font-face {
-  font-family: "UsedFonts";
-  /*   src: url("") format(""),
-    url("") format(""); */
+  font-family: "Neo Tech Std";
+  src: url('../public/neo-tech-std.otf') format('opentype'),
+    url('../public/neo-tech-std-bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 :root {
@@ -26,5 +28,5 @@
   --font-size-large: 2rem;
   --font-size-biggest: 3rem;
 
-  --font-one: "UsedFonts", sans-serif;
+  --font-one: "Neo Tech Std", sans-serif;
 }

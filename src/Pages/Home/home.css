@@ -7,12 +7,10 @@
   height: 100%;
   padding-top: 96px;
 
-  background: radial-gradient(
-    circle,
-    rgba(241, 187, 82, 0.1) 0%,
-    rgba(153, 211, 219, 0.1) 50%,
-    rgba(241, 187, 82, 0.1) 100%
-  );
+  background: radial-gradient(circle,
+      rgba(241, 187, 82, 0.1) 0%,
+      rgba(153, 211, 219, 0.1) 50%,
+      rgba(241, 187, 82, 0.1) 100%);
 }
 
 .home h1 {
@@ -65,7 +63,9 @@
   justify-content: center;
   width: 100%;
   height: 60%;
-  background-color: rgba(var(--color-dark-green));
+  background-image: url('../../../public/bgsquare.png');
+  background-size: 100% auto;
+  background-attachment: fixed;
 }
 
 .home .video .bot .content {
@@ -86,7 +86,7 @@
   height: 800px;
   min-height: 100px;
 
-  border: solid 10px rgba(var(--color-light-green));
+  border: solid 10px rgba(var(--color-gray));
   border-radius: 10px;
 }
 
@@ -188,7 +188,7 @@
   flex-wrap: wrap;
   justify-content: center;
 
-  gap: 20px;  
+  gap: 20px;
 }
 
 .home .section-exclusive {
@@ -227,11 +227,9 @@
   margin-top: 90px;
   padding: 0 20px;
 
-  background: radial-gradient(
-    circle,
-    rgba(22, 169, 168, 1) 11%,
-    rgba(15, 68, 74, 1) 69%
-  );
+  background: radial-gradient(circle,
+      rgba(22, 169, 168, 1) 11%,
+      rgba(15, 68, 74, 1) 69%);
 
   border-radius: 10px;
 }
@@ -246,7 +244,7 @@
 .home .about .top h1 {
   font-weight: 900;
   letter-spacing: 2px;
-  color: rgba(var(--color-black));  
+  color: rgba(var(--color-black));
 }
 
 .home .about .content {
@@ -391,16 +389,16 @@
     .home .video {
       height: 250px;
     }
-  
+
     .home .video .bot .content iframe {
       width: 400px;
       height: 250px;
     }
-  
+
     .home .video .top {
       display: none;
     }
-  
+
     .home .social-number .content .right {
       justify-content: center;
       width: 500px;
@@ -415,16 +413,16 @@
     .home .video {
       height: 250px;
     }
-  
+
     .home .video .bot .content iframe {
       width: 400px;
       height: 250px;
     }
-  
+
     .home .video .top {
       display: none;
     }
-  
+
     .home .social-number .content .right {
       justify-content: center;
       width: 390px;
@@ -448,12 +446,12 @@
     .home .video {
       height: 200px;
     }
-  
+
     .home .video .bot .content iframe {
       width: 300px;
       height: 220px;
     }
-  
+
     .home .video .top {
       display: none;
     }
