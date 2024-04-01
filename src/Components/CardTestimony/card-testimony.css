@@ -19,5 +19,5 @@
 .card-testimony p {
     letter-spacing: 1px;
     text-align: center;
-    color: rgba(var(--color-dark-green));
+    color: rgba(var(--color-black));
 }

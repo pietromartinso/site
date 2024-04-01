@@ -1,12 +1,10 @@
 import CardCourses from "../../Components/CardCourses/CardCourses";
-import "./home.css";
-import CardExclusive from "../../Components/CardExclusives/CardsExclusive";
-import infosCourses from "../../Data/infos-courses";
-import infosCardExclusive from "../../Data/infos-cardExclusive";
 import CardTestimony from "../../Components/CardTestimony/CardTestimony";
-import FotoPietro from "../../assets/foto-pietro.png";
-import infosCardTestimony from "../../Data/infos-cardTestimony";
 import InfosFaq from "../../Data/faq";
+import infosCardTestimony from "../../Data/infos-cardTestimony";
+import infosCourses from "../../Data/infos-courses";
+import FotoPietro from "../../assets/foto-pietro.png";
+import "./home.css";
 
 function Home() {
   return (
@@ -88,21 +86,21 @@ function Home() {
           <div className="left">
             <div>
               <h2>Profissional de TI desde 2007</h2>
-              <h3>
+              <p>
                 Pietro possui vasta experiência no mercado de Tecnologia da Informação, tendo atuado em diversos projetos e áreas.
-              </h3>
+              </p>
             </div>
             <div>
               <h2>Desenvolvedor de Software Sênior</h2>
-              <h3>
+              <p>
                 Programador full stack, já atuou com linguagens como C, C++, C#, Java, Python, HTML, CSS, JavaScript/TypeScript, Go, Solidity.
-              </h3>
+              </p>
             </div>
             <div>
               <h2>Professor no Ensino Superior</h2>
-              <h3>
+              <p>
                 Dá aulas de programação a nível técnico e superior. Coordenador de cursos de graduação e pós graduação.
-              </h3>
+              </p>
             </div>
           </div>
           <div className="right">
@@ -132,7 +130,7 @@ function Home() {
         <div className="right">
           <ol>
             {InfosFaq.map((faq, index) => (
-              <li key={index}>{faq.text}</li>
+              <li key={index}>{faq.title}</li>
             ))}
           </ol>
         </div>

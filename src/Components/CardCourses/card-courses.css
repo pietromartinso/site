@@ -8,6 +8,11 @@
 
   border-radius: 10px;
   border: 1px solid rgba(var(--color-dark-green), 1);
+  transition: ease-in-out .2s;
+}
+
+.card-courses:hover {
+  box-shadow: 0 0 8px 3px rgba(var(--color-dark-green));
 }
 
 .card-courses .container {
