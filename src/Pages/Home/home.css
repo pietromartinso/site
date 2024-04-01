@@ -462,11 +462,6 @@ background-color: rgba(var(--color-light-blue));
     .home .social-number .content {
       padding: 0;
     }
-
-    .home .faq .right ol li {
-      text-align: center;
-      padding: 0;
-    }
   }
 
   @media (max-width: 500px) {
@@ -546,11 +541,6 @@ background-color: rgba(var(--color-light-blue));
     .home .faq .left,
     .home .faq .right {
       width: 100%;
-    }
-
-    .home .faq .right ol li {
-      text-align: center;
-      padding: 0;
     }
   }
 }
