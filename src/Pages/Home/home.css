@@ -345,12 +345,18 @@
 .home .faq .right ol li {
   display: flex;
   align-items: center;
+  justify-content: center;
 
-  height: 50px;
+  height: auto;
   width: 100%;
-  padding-left: 60px;
+  padding: 10px 0;
 
   border-top: 1px solid rgba(var(--color-dark-green));
+  cursor: pointer;
+}
+
+.home .faq .right ol li:hover {
+background-color: rgba(var(--color-light-blue));
 }
 
 @media (max-width: 1350px) {

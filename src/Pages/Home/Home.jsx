@@ -1,3 +1,4 @@
+import { useState } from "react";
 import CardCourses from "../../Components/CardCourses/CardCourses";
 import CardTestimony from "../../Components/CardTestimony/CardTestimony";
 import InfosFaq from "../../Data/faq";
@@ -7,6 +8,16 @@ import FotoPietro from "../../assets/foto-pietro.png";
 import "./home.css";
 
 function Home() {
+  const [showAnswer, setShowAnswer] = useState(null);
+
+  const toggleShowAnswer = (index) => {
+    if (showAnswer === index) {
+      setShowAnswer(null);
+    } else {
+      setShowAnswer(index);
+    }
+  };
+
   return (
     <div className="home" id="inicio">
       <div className="title">
@@ -45,7 +56,6 @@ function Home() {
             </div>
           </div>
         </div>
-
       </div>
       <section className="courses" id="courses">
         <h1>Cursos</h1>
@@ -87,19 +97,22 @@ function Home() {
             <div>
               <h2>Profissional de TI desde 2007</h2>
               <p>
-                Pietro possui vasta experiência no mercado de Tecnologia da Informação, tendo atuado em diversos projetos e áreas.
+                Pietro possui vasta experiência no mercado de Tecnologia da
+                Informação, tendo atuado em diversos projetos e áreas.
               </p>
             </div>
             <div>
               <h2>Desenvolvedor de Software Sênior</h2>
               <p>
-                Programador full stack, já atuou com linguagens como C, C++, C#, Java, Python, HTML, CSS, JavaScript/TypeScript, Go, Solidity.
+                Programador full stack, já atuou com linguagens como C, C++, C#,
+                Java, Python, HTML, CSS, JavaScript/TypeScript, Go, Solidity.
               </p>
             </div>
             <div>
               <h2>Professor no Ensino Superior</h2>
               <p>
-                Dá aulas de programação a nível técnico e superior. Coordenador de cursos de graduação e pós graduação.
+                Dá aulas de programação a nível técnico e superior. Coordenador
+                de cursos de graduação e pós graduação.
               </p>
             </div>
           </div>
@@ -130,7 +143,10 @@ function Home() {
         <div className="right">
           <ol>
             {InfosFaq.map((faq, index) => (
-              <li key={index}>{faq.title}</li>
+              <div key={index}>
+                <li onClick={() => toggleShowAnswer(index)}>{faq.title}</li>
+                {showAnswer === index && <p>{faq.text}</p>}
+              </div>
             ))}
           </ol>
         </div>
