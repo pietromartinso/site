@@ -1,0 +1,30 @@
+.policies {
+    display: flex;
+    justify-content: center;
+
+    padding: 110px 10px;
+    text-align: justify;
+    line-height: 26px;
+    letter-spacing: 2px;
+}
+
+.policies .container {
+    max-width: 1300px;
+}
+
+.policies h1:first-child {
+    font-size: var(--font-size-biggest);
+    line-height: 80px;
+}
+
+.policies h2:nth-child(2) {
+    font-size: var(--font-size-large);
+}
+
+.policies h3 {
+    margin: 60px 0 40px;
+}
+
+.policies li {
+    margin-left: 20px;
+}

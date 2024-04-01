@@ -7,6 +7,7 @@ import CoursesPage from "./Pages/Courses/CoursesPage";
 import Home from "./Pages/Home/Home";
 import "./index.css";
 import TypeCourseContextProvider from "./Context/typeCourseContext";
+import PrivacyPolicies from "./Pages/PrivacPolicies/PrivacyPolicies";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -28,6 +29,7 @@ root.render(
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/courses" element={<CoursesPage />} />
+          <Route path="/polities" element={<PrivacyPolicies/>} />
         </Routes>
         <Footer />
       </TypeCourseContextProvider>
