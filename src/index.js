@@ -29,7 +29,7 @@ root.render(
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/courses" element={<CoursesPage />} />
-          <Route path="/polities" element={<PrivacyPolicies/>} />
+          <Route path="/policies" element={<PrivacyPolicies/>} />
         </Routes>
         <Footer />
       </TypeCourseContextProvider>

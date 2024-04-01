@@ -1,7 +1,7 @@
 import "./privacy-policies.css";
 function PrivacyPolicies() {
   return (
-    <div className="policies">
+    <div className="policies" id="inicio">
       <div className="container">
         <h1>PROFPIETRO.COM:</h1>
         <h2>Política de Privacidade</h2>

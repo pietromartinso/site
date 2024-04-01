@@ -39,7 +39,7 @@ function Footer() {
         </div>
       </div>
       <div className="bottom">
-        <a href="#">Política de privacidade</a>
+        <a href="/policies">Política de privacidade</a>
         <p>Copyright © 2024 Prof. Pietro Martins</p>
         <a href="#inicio">Voltar ao topo ▲</a>
       </div>
