@@ -5,15 +5,27 @@ import InfosFaq from "../../Data/faq";
 import infosCardTestimony from "../../Data/infos-cardTestimony";
 import infosCourses from "../../Data/infos-courses";
 import FotoPietro from "../../assets/foto-pietro.png";
+import ArrowUp from "../../assets/seta-cima.png";
+import ArrowDown from "../../assets/seta-baixo.png";
 import "./home.css";
 
 function Home() {
   const [showAnswer, setShowAnswer] = useState(null);
+  const [arrow, setArrow] = useState(Array(InfosFaq.length).fill(false));
 
   const toggleShowAnswer = (index) => {
     if (showAnswer === index) {
       setShowAnswer(null);
+
+      setArrow((prevArrows) => {
+        const newArrows = [...prevArrows];
+        newArrows[index] = false;
+        return newArrows;
+      });
     } else {
+      const newArrows = Array(InfosFaq.length).fill(false);
+      newArrows[index] = true;
+      setArrow(newArrows);
       setShowAnswer(index);
     }
   };
@@ -23,7 +35,9 @@ function Home() {
       <div className="title">
         <h1>Conheça meus cursos</h1>
         <h2 id="sobre">Aulas de programação que você entende de verdade:</h2>
-        <h2>o equilíbrio entre conceitos didáticos e exemplos práticos de fixação</h2>
+        <h2>
+          o equilíbrio entre conceitos didáticos e exemplos práticos de fixação
+        </h2>
       </div>
       <div className="video">
         <div className="top"></div>
@@ -145,7 +159,13 @@ function Home() {
           <ol>
             {InfosFaq.map((faq, index) => (
               <div key={index}>
-                <li onClick={() => toggleShowAnswer(index)}>{faq.title}</li>
+                <li onClick={() => toggleShowAnswer(index)}>
+                  <img
+                    src={arrow[index] ? ArrowUp : ArrowDown}
+                    alt="arrow up"
+                  />
+                  {faq.title}
+                </li>
                 {showAnswer === index && <p>{faq.text}</p>}
               </div>
             ))}

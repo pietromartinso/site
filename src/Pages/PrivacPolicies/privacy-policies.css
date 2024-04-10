@@ -12,6 +12,10 @@
     max-width: 1300px;
 }
 
+.policies .container h2 {
+    margin-bottom: 150px;
+}
+
 .policies h1:first-child {
     font-size: var(--font-size-biggest);
     line-height: 80px;

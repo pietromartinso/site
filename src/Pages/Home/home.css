@@ -24,6 +24,7 @@
 .home h2 {
   font-size: var(--font-size-medium);
   font-weight: 900;
+  padding: 0 10px;
 }
 
 .home .title {
@@ -227,14 +228,18 @@
   max-width: 1300px;
 
   margin-top: 90px;
-  padding: 0 20px;
+  padding: 0 20px 50px;
 
+  background: rgb(115, 211, 219);
   background: linear-gradient(
-    rgba(var(--color-light-blue)) 40%,
-    rgba(var(--color-light-green)) 90%
+    151deg,
+    rgba(var(--color-light-blue)) 39%,
+    rgba(var(--color-light-green)) 71%,
+    rgba(var(--color-dark-green)) 89%
   );
 
   border-radius: 10px;
+  z-index: 1;
 }
 
 .home .about .top {
@@ -245,7 +250,7 @@
 }
 
 .home .about .top h1 {
-  font-size: var(--font-size-biggest);
+  font-size: var(--font-size-large2);
   font-weight: 900;
   letter-spacing: 2px;
   color: rgba(var(--color-dark-green));
@@ -283,9 +288,9 @@
 
 .home .about .content .right img {
   height: auto;
-  width: 80%;
+  width: 50%;
   border: 10px solid rgba(var(--color-dark-green));
-  border-radius: 10px;
+  border-radius: 90px;
 }
 
 .home .testimony {
@@ -294,19 +299,19 @@
   align-items: center;
 
   width: 100%;
-  max-width: 1300px;
-  margin-top: 100px;
+  margin-top: -140px;
 
-  padding: 80px 20px;
+  padding: 80px 20px 180px;
   border-radius: 10px;
 
   background-color: rgba(var(--color-light-blue));
 }
 
 .home .testimony h1 {
-  margin-bottom: 60px;
+  margin: 120px 0 60px;
   font-weight: 900;
   color: rgba(var(--color-dark-green));
+  font-size: var(--font-size-large2);
 }
 
 .home .testimony .content {
@@ -342,6 +347,10 @@
   width: 100%;
 }
 
+.home .faq .right ol img {
+  width: 24px;
+}
+
 .home .faq .right ol li {
   display: flex;
   align-items: center;
@@ -349,17 +358,32 @@
 
   height: auto;
   width: 100%;
-  padding: 10px 0;
+  padding: 10px 20px;
+  gap: 14px;
 
   border-top: 1px solid rgba(var(--color-dark-green));
   cursor: pointer;
 }
 
 .home .faq .right ol li:hover {
-background-color: rgba(var(--color-light-blue));
+  background-color: rgba(var(--color-light-blue));
+}
+
+.home .faq .right ol p {
+  padding: 0 20px;
+  text-align: center;
+  margin: 10px 0;
 }
 
 @media (max-width: 1350px) {
+  .home .title h1 {
+    padding: 0 20px;
+  }
+
+  .home .title h2 {
+    padding: 0 20px;
+  }
+
   .home .video {
     display: flex;
     flex-direction: column;
@@ -378,6 +402,14 @@ background-color: rgba(var(--color-light-blue));
 }
 
 @media (max-width: 980px) {
+  .home .title h1 {
+    padding: 0 20px;
+  }
+
+  .home .title h2 {
+    padding: 0 20px;
+  }
+
   .home .video {
     height: 450px;
   }
@@ -401,6 +433,14 @@ background-color: rgba(var(--color-light-blue));
   }
 
   @media (max-width: 730px) {
+    .home .title h1 {
+      padding: 0 20px;
+    }
+
+    .home .title h2 {
+      padding: 0 20px;
+    }
+
     .home .video {
       height: 250px;
     }
@@ -441,6 +481,14 @@ background-color: rgba(var(--color-light-blue));
   }
 
   @media (max-width: 570px) {
+    .home .title h1 {
+      padding: 0 20px;
+    }
+
+    .home .title h2 {
+      padding: 0 20px;
+    }
+
     .home .video {
       height: 250px;
     }
@@ -475,6 +523,18 @@ background-color: rgba(var(--color-light-blue));
   }
 
   @media (max-width: 425px) {
+    .home .title h1 {
+      font-size: 48px;
+    }
+
+    .home .title h2 {
+      font-size: 26px;
+    }
+
+    .home .courses h1 {
+      font-size: 48px;
+    }
+
     .home h1 {
       font-size: 32px;
     }
@@ -528,6 +588,10 @@ background-color: rgba(var(--color-light-blue));
       height: 100px;
     }
 
+    .home .testimony h1 {
+      font-size: var(--font-size-large);
+    }
+
     .home .testimony .content {
       width: 100%;
     }
@@ -541,6 +605,15 @@ background-color: rgba(var(--color-light-blue));
     .home .faq .left,
     .home .faq .right {
       width: 100%;
+    }
+
+    .home .faq .left h1 {
+      margin-bottom: 20px;
+    }
+
+    .home .faq .right {
+      text-align: center;
+      padding: 0 20px;
     }
   }
 }

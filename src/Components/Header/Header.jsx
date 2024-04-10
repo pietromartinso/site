@@ -14,41 +14,48 @@ function Header() {
 
   return (
     <div className="header" id="home">
-      <a href="http://localhost:3000/"><img src={Logo} alt="Logo" className="logo" /></a>
-      <div className="menu-hamburg">
-        <img
-          src={IconHamburger}
-          alt="Menu"
-          className="hamburger"
-          onClick={() => HandleClickOpenMenu()}
-        />
-        {openMenu && <Menu HandleClickOpenMenu={HandleClickOpenMenu} />}
-      </div>
-      <div className="navbar">
-        <ul>
-          <li>
-            <a href="#inicio">Início</a>
-          </li>
-          <li>
-            <a href="#sobre">Sobre</a>
-          </li>
-          <li>
-            <a href="#courses">Cursos</a>
-          </li>
-          {/* <li>
+      <div className="container">
+        <a href="http://localhost:3000/">
+          <img src={Logo} alt="Logo" className="logo" />
+        </a>
+        <div className="menu-hamburg">
+          <img
+            src={IconHamburger}
+            alt="Menu"
+            className="hamburger"
+            onClick={() => HandleClickOpenMenu()}
+          />
+          {openMenu && <Menu HandleClickOpenMenu={HandleClickOpenMenu} />}
+        </div>
+        <div className="navbar">
+          <ul>
+            <li>
+              <a href="#inicio">Início</a>
+            </li>
+            <li>
+              <a href="#sobre">Sobre</a>
+            </li>
+            <li>
+              <a href="#courses">Cursos</a>
+            </li>
+            {/* <li>
             <a href="#servicos">Serviços</a>
           </li> */}
-        </ul>
-        <div className="access">
-          <div className="login">
-            <a href="https://profpietrocursos.membertizze.com.br/login" target="Blanck_">
-              <img src={UserIcon} alt="User Icon" />
-              <button>FAZER LOGIN</button>
-            </a>
-          </div>
-          {/* <div className="buy">
+          </ul>
+          <div className="access">
+            <div className="login">
+              <a
+                href="https://profpietrocursos.membertizze.com.br/login"
+                target="Blanck_"
+              >
+                <img src={UserIcon} alt="User Icon" />
+                <button>FAZER LOGIN</button>
+              </a>
+            </div>
+            {/* <div className="buy">
             <button>ASSINAR AGORA</button>
           </div> */}
+          </div>
         </div>
       </div>
     </div>
