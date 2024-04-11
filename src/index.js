@@ -19,7 +19,7 @@ const ScrollToTop = () => {
   return null;
 };
 
-const root = createRoot(document.getElementById("root")); // Mudança aqui
+const root = createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Router>

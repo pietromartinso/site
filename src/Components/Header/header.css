@@ -40,14 +40,18 @@
 
 .header .navbar ul {
   display: flex;
-  list-style: none;
   align-items: center;
   justify-content: space-between;
+  list-style: none;
 
   height: 50px;
   min-width: 400px;
 
   padding: 0 20px;
+}
+
+.header .navbar .other-page {
+  justify-content: flex-end;
 }
 
 .header .navbar ul li a {
@@ -67,9 +71,17 @@
   border-radius: 10px;
 }
 
+.header .navbar .other-page {
+  justify-content: flex-end;
+}
+
 .header .navbar ul li a:hover {
   padding: 0 12px;
   background-color: rgba(var(--color-light-green), 0.4);
+}
+
+.header .navbar .other-page li a {
+  width: 180px;
 }
 
 .header .access {
