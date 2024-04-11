@@ -1,0 +1,28 @@
+.courses-page .faq {
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 100px;
+    padding: 0 10px;
+    line-height: 1.5;
+  }
+  
+  .courses-page .faq h2 {
+    text-align: center;
+    margin: 50px 0;
+  
+    font-weight: 900;
+    color: rgba(var(--color-dark-green));
+  }
+  
+  .courses-page .faq p:nth-child(2) {
+    margin-bottom: 20px;
+  }
+  
+  .courses-page .faq li {
+    margin-bottom: 10px;
+    background-color: rgba(var(--color-light-blue));
+  }
+  
+  .courses-page .faq p {
+    margin-bottom: 20px;
+  }

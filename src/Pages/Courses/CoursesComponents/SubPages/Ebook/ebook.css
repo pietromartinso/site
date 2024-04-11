@@ -1,0 +1,67 @@
+.courses-page .container {
+  width: 100%;
+}
+
+.courses-page .container .ebook {
+  width: 100%;
+  max-width: 1000px;
+
+  margin-top: 50px;
+}
+
+.courses-page .container .ebook ul li{
+  padding-left: 10px;
+  margin-left: 50px;
+}
+
+.courses-page .container .ebook .button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.courses-page .container .ebook button {
+  all: unset;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  max-width: 500px;
+  height: 50px;
+  padding: 0 10px;
+
+  margin: 50px 0;
+  border-radius: 20px;
+
+  color: rgba(var(--color-dark-green));
+  font-weight: 600;
+  background-color: rgba(var(--color-yellow));
+
+  cursor: pointer;
+  transition: ease-in-out 0.1s;
+}
+
+.courses-page .container .ebook button:hover {
+    background-color: rgba(var(--color-dark-green));
+    color: rgba(var(--color-white), 1);
+  }
+  
+  .courses-page .container .ebook p {
+    text-align: justify;
+    margin: 30px 0;
+    line-height: 1.5;
+  }
+  
+  .courses-page .container .ebook p:nth-child(4) {
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  .courses-page .container .ebook ul {
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .courses-page .container .ebook ul li {
+    margin-bottom: 10px;
+  }
