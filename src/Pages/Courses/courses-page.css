@@ -27,37 +27,47 @@
 
 .courses-page section .video {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
-  height: 550px;
-  background-color: rgba(var(--color-light-green));
+  height: 680px;
+  padding-top: 30px;
+  background-image: url("../../assets/bgsquare.png");
+  background-size: 100% auto;
+  background-attachment: fixed;
 }
 
 .courses-page section .video iframe {
   width: 900px;
   height: 504px;
   border-radius: 5px;
+  margin-bottom: 40px;
   border: 10px solid rgba(var(--color-dark-green));
 }
 
-.courses-page .container {
+.courses-page section .video button {
+  all: unset;
   display: flex;
-  justify-content: center;
-  width: 100%;
+  align-items: center;
+  text-align: center;
 
-  background-color: rgba(var(--color-gray));
-  border-bottom: 1px solid rgba(var(--color-dark-green));
+  max-width: 500px;
+  height: 50px;
+  padding: 0 10px;
+  border-radius: 20px;
+
+  color: rgba(var(--color-dark-green));
+  font-weight: 600;
+  background-color: rgba(var(--color-yellow));
+
+  cursor: pointer;
+  transition: ease-in-out 0.1s; 
 }
 
-.courses-page .container .ebook {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  width: 100%;
-  max-width: 1000px;
-  padding: 0 10px;
+.courses-page section .video button:hover {
+  background-color: rgba(var(--color-dark-green));
+  color: rgba(var(--color-white), 1);
 }
 
 .courses-page .container .ebook .button {
@@ -81,7 +91,6 @@
 
   color: rgba(var(--color-dark-green));
   font-weight: 600;
-  border: 1px solid rgba(var(--color-dark-green));
   background-color: rgba(var(--color-yellow));
 
   cursor: pointer;
@@ -133,49 +142,6 @@
   border-bottom: 1px solid rgba(var(--color-dark-green));
 
   background-color: rgba(var(--color-light-blue));
-}
-
-.courses-page .content button {
-  all: unset;
-  display: flex;
-  text-align: center;
-  align-items: center;
-
-  max-width: 500px;
-  height: 50px;
-
-  margin: 50px 0;
-  padding: 0 10px;
-  border-radius: 20px;
-
-  color: rgba(var(--color-dark-green));
-  font-weight: 600;
-  border: 1px solid rgba(var(--color-dark-green));
-  background-color: rgba(var(--color-yellow));
-
-  cursor: pointer;
-  transition: ease-in-out 0.1s;
-}
-
-.courses-page .content button:hover {
-  background-color: rgba(var(--color-dark-green));
-  color: rgba(var(--color-white), 1);
-}
-
-.courses-page .content .text {
-  display: flex;
-  flex-direction: column;
-
-  width: 100%;
-  max-width: 1000px;
-
-  margin-top: 20px;
-  padding: 0 10px;
-  line-height: 1.5;
-}
-
-.courses-page .content p {
-  text-align: justify;
 }
 
 .courses-page .faq {

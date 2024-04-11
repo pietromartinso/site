@@ -12,10 +12,13 @@ function CoursesPage() {
           <div>
             <iframe
               src={infosPagesCourses[type].video}
-              title="video" 
+              title="video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             ></iframe>
+          </div>
+          <div className="button">
+            <button>QUERO O E-BOOK, EXERCÍCIOS, CERTIFICADO e BÔNUS</button>
           </div>
         </div>
       </section>
@@ -44,33 +47,6 @@ function CoursesPage() {
               no WhatsApp para tirar dúvidas em tempo real!
             </p>
           </div>
-        </div>
-      </section>
-      <div className="middle-h1">
-        <h1>Pratique com exercícios e emita seu certificado!</h1>
-      </div>
-      <section>
-        <div className="content">
-          <div className="text">
-            <p>
-              Algumas pessoas querem ir além de assistir os vídeos, e têm o
-              desejo receber um e-Book em PDF, resumido, bem como botar a mão na
-              massa através de exercícios práticos. Por isso, se você quiser ter
-              acesso aos exercícios resolvidos, basta adquiri-los. Além disso
-              você terá condições de emitir seu certificado de conclusão do
-              curso. E ainda tem mais um bônus extraordinário: se você quiser
-              tirar suas dúvidas em tempo real com os(as) demais participantes
-              do curso, poderá ingressar no nosso grupo VIP, no WhatsApp, para
-              conversar com outras pessoas de nossa comunidade sobre seus
-              estudos. Eu próprio, Prof. Pietro, estou no grupo do WhatsApp para
-              mediar as conversas e também para auxiliar na solução de dúvidas.
-              Para acessar os exercícios, emitir o seu certificado, e também ter
-              acesso ao bônus (grupo VIP no WhatsApp) clique no botão a seguir.
-              [Caso o botão não esteja sendo renderizado, logo abaixo, por
-              gentileza, clique aqui para adquirir o material]
-            </p>
-          </div>
-          <button>QUERO O E-BOOK, EXERCÍCIOS, CERTIFICADO e BÔNUS</button>
         </div>
       </section>
       <section>
