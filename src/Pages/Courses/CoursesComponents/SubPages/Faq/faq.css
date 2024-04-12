@@ -21,8 +21,10 @@
   .courses-page .faq li {
     margin-bottom: 10px;
     background-color: rgba(var(--color-light-blue));
+    list-style: none;
   }
   
   .courses-page .faq p {
     margin-bottom: 20px;
+    padding: 10px;
   }

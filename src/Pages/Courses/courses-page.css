@@ -136,7 +136,13 @@
   }
 
   .courses-page section .video {
-    height: 480px;
+    height: 700px;
+  }
+
+
+
+  .courses-page .sub-pages .ebook {
+    padding: 0 20px;
   }
 }
 
@@ -147,7 +153,21 @@
   }
 
   .courses-page section .video {
-    height: 400px;
+    height: 600px;
+  }
+
+  .courses-page .sub-pages .navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+  }
+
+  .courses-page .sub-pages .navbar p:first-child {
+    margin: 0;
+  }
+
+  .courses-page section .sub-pages .ebook {
+    padding: 0 20px;
   }
 }
 
@@ -158,7 +178,11 @@
   }
 
   .courses-page section .video {
-    height: 350px;
+    height: 500px;
+  }
+
+  .courses-page section .sub-pages .ebook {
+    padding: 0 20px;
   }
 }
 
@@ -169,8 +193,12 @@
   }
 
   .courses-page section .video {
-    height: 350px;
+    height: 450px;
   }
+
+  .courses-page section .sub-pages .ebook {
+    padding: 0 20px
+  };
 }
 
 @media (max-width: 425px) {
@@ -179,7 +207,11 @@
   }
 
   .courses-page section .video {
-    height: 250px;
+    height: 400px;
+  }
+
+  .courses-page section .video button {
+    margin: 0 20px;
   }
 
   .courses-page section .video iframe {
@@ -187,5 +219,21 @@
     height: 179px;
     border-radius: 5px;
     border: 10px solid rgba(var(--color-dark-green));
+  }
+
+  .courses-page .sub-pages .navbar {
+    padding: 0 20px;
+  }
+
+  .courses-page .sub-pages .navbar p:first-child {
+    margin: 0;
+  }
+
+  .courses-page .sub-pages .navbar p {
+    text-align: center;
+  }
+
+  .courses-page .sub-pages .ebook {
+    padding: 0 20px;
   }
 }
