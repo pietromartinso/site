@@ -5,9 +5,8 @@ const dataFaq = [
       "Não existem pré-requisitos técnicos. Todavia, é importante dizer que a evolução pessoal do(a) estudante depende exclusivamente dele(a).",
   },
   {
-    title: "Qual linguagem de programação vou aprender?",
-    answer:
-      "Você receberá conteúdos voltados à criação de algoritmos em Pseudocódigo, também conhecido como Portugol, e poderá executar seus algoritmos na ferramenta conhecida como VisuAlg.",
+    title: "O que vou aprender?",
+    answer: `Você receberá conteúdos voltados ao curso escolhido.`,
   },
   {
     title: "O curso é de graça, sem custos envolvidos?",
@@ -17,12 +16,12 @@ const dataFaq = [
   {
     title: "Como saber se necessito das vídeoaulas?",
     answer:
-      "Se você quer aprender lógica de programação e algoritmos em Pseudocódigo / Portugol, esse material é para você.",
+      "Se você quer aprender sobre o tema escolhido ou tem alguma dificuldade, esse material é para você.",
   },
   {
     title: "Há alguma garantia de aprendizagem?",
     answer:
-      "Se o(a) estudante assistir a todas as aulas, resolver todos os exercícios, e tirar suas dúvidas no grupo do WhatsApp, é esperado que ele(a) se sinta muito mais confiante com relação à sua habilidade em desenvolver algoritmos. Todavia, apenas o(a) próprio(a) estudante precisa se comprometer e, sendo assim, o Prof. Pietro não pode dar garantias nesse sentido – as garantias devem ser buscadas pelo(a) estudante.",
+      "Se o(a) estudante assistir a todas as aulas, resolver todos os exercícios, e tirar suas dúvidas no grupo do WhatsApp, é esperado que ele(a) se sinta muito mais confiante com relação à sua habilidade em desenvolver algoritmos. Todavia, apenas o(a) próprio(a) estudante precisa se comprometer e, sendo assim, o Prof. Pietro não pode dar garantias nesse sentido - as garantias devem ser buscadas pelo(a) estudante.",
   },
   {
     title: "Como saber se necessito dos exercícios resolvidos para praticar?",

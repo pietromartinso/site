@@ -1,6 +1,11 @@
 import React, { useEffect } from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useLocation,
+} from "react-router-dom";
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import CoursesPage from "./Pages/Courses/CoursesPage";
@@ -29,7 +34,7 @@ root.render(
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/courses" element={<CoursesPage />} />
-          <Route path="/policies" element={<PrivacyPolicies/>} />
+          <Route path="/policies" element={<PrivacyPolicies />} />
         </Routes>
         <Footer />
       </TypeCourseContextProvider>

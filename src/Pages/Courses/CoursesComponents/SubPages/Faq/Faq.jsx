@@ -1,8 +1,8 @@
 import { useState } from "react";
-import "./faq.css";
-import dataFaq from "./data-faq";
-import ArrowUp from "../../../../../assets/seta-cima.png";
 import ArrowDown from "../../../../../assets/seta-baixo.png";
+import ArrowUp from "../../../../../assets/seta-cima.png";
+import dataFaq from "./data-faq";
+import "./faq.css";
 
 function Faq() {
   const [showAnswer, setShowAnswer] = useState(null);

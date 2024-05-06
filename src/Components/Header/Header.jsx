@@ -2,7 +2,7 @@ import { useState } from "react";
 import IconHamburger from "../../assets/hamburger.png";
 import Logo from "../../assets/logo-pietro-2.png";
 import UserIcon from "../../assets/user-icon.png";
-import Menu from "../Menu/Menu";
+import Menu from "./Menu/Menu";
 import "./header.css";
 import { useLocation } from "react-router-dom";
 
