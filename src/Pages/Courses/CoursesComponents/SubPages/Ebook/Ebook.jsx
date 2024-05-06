@@ -5,7 +5,7 @@ function Ebook() {
   const type = localStorage.getItem("page");
   return (
     <div className="container">
-      <div className="ebook">       
+      <div className="ebook">
         <p>{infosPagesCourses[type].description}</p>
         <ul>
           {infosPagesCourses[type].topics.map((topic, index) => (
@@ -23,9 +23,6 @@ function Ebook() {
           Ainda: você pode ingressar em nossa comunidade no WhatsApp para tirar
           dúvidas em tempo real!
         </p>
-        <div className="button">
-          <button>QUERO O E-BOOK, EXERCÍCIOS, CERTIFICADO e BÔNUS</button>
-        </div>
       </div>
     </div>
   );

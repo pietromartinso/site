@@ -46,7 +46,11 @@
   left: 0;
   width: 100%;
   height: 22%;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1)
+  );
 }
 
 .courses-page section .video iframe {
@@ -96,7 +100,7 @@
   height: 50px;
   max-width: 1300px;
 
-  border-bottom: 1px solid rgba(var(--color-dark-green), .5);
+  border-bottom: 1px solid rgba(var(--color-dark-green), 0.5);
 
   gap: 15px;
 }
@@ -115,8 +119,8 @@
 }
 
 .courses-page .sub-pages .navbar p:hover {
-  border-bottom: 4px solid rgba(var(--color-dark-green), .7);
-  border-top: 4px solid rgba(var(--color-dark-green), .7);
+  border-bottom: 4px solid rgba(var(--color-dark-green), 0.7);
+  border-top: 4px solid rgba(var(--color-dark-green), 0.7);
 }
 
 .courses-page .sub-pages .navbar p:first-child {
@@ -124,9 +128,41 @@
 }
 
 .courses-page .sub-pages .navbar p.active {
-  border-bottom: 4px solid rgba(var(--color-dark-green), .7);
-  border-top: 4px solid rgba(var(--color-dark-green), .7);
+  border-bottom: 4px solid rgba(var(--color-dark-green), 0.7);
+  border-top: 4px solid rgba(var(--color-dark-green), 0.7);
   font-weight: bolder;
+}
+
+.courses-page .sub-pages .button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.courses-page .sub-pages button {
+  all: unset;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  max-width: 500px;
+  height: 50px;
+  padding: 0 10px;
+
+  margin: 50px 0 100px;
+  border-radius: 20px;
+
+  color: rgba(var(--color-dark-green));
+  font-weight: 600;
+  background-color: rgba(var(--color-yellow));
+
+  cursor: pointer;
+  transition: ease-in-out 0.1s;
+}
+
+.courses-page .sub-pages button:hover {
+  background-color: rgba(var(--color-dark-green));
+  color: rgba(var(--color-white), 1);
 }
 
 @media (max-width: 1024px) {
@@ -138,8 +174,6 @@
   .courses-page section .video {
     height: 700px;
   }
-
-
 
   .courses-page .sub-pages .ebook {
     padding: 0 20px;
@@ -197,8 +231,8 @@
   }
 
   .courses-page section .sub-pages .ebook {
-    padding: 0 20px
-  };
+    padding: 0 20px;
+  }
 }
 
 @media (max-width: 425px) {

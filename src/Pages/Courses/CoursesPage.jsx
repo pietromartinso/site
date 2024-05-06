@@ -27,7 +27,7 @@ function CoursesPage() {
             ></iframe>
           </div>
           <div className="button">
-            <button>QUERO O E-BOOK, EXERCÍCIOS, CERTIFICADO e BÔNUS</button>
+            <button>QUERO O E-BOOK, EXERCÍCIOS, CERTIFICADO e BÔNUS!</button>
           </div>
         </div>
       </section>
@@ -57,6 +57,9 @@ function CoursesPage() {
             {subPages === "ebook" && <Ebook />}
             {subPages === "why" && <Why />}
             {subPages === "faq" && <Faq />}
+            <div className="button">
+              <button>QUERO O E-BOOK, EXERCÍCIOS, CERTIFICADO e BÔNUS!</button>
+            </div>
           </div>
         </div>
       </section>
