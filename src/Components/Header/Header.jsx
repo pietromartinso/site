@@ -17,7 +17,7 @@ function Header() {
   return (
     <div className="header" id="home">
       <div className="container">
-        <a href="http://localhost:3000/">
+        <a href="/">
           <img src={Logo} alt="Logo" className="logo" />
         </a>
         <div className="menu-hamburg">

@@ -19,7 +19,10 @@ function CardCourses({ index, logo, textTitle, textSubTitle, link }) {
           <div className="summary"></div>
         </div>
         <div className="see-details">
-          <Link to={link} onClick={() => typeSelected(index)}>{`VER DETALHES`}</Link>
+          <Link
+            to={link}
+            onClick={() => typeSelected(index)}
+          >{`VER DETALHES`}</Link>
         </div>
       </div>
     </div>

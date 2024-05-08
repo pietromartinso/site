@@ -12,7 +12,7 @@ import CoursesPage from "./Pages/Courses/CoursesPage";
 import Home from "./Pages/Home/Home";
 import "./index.css";
 import TypeCourseContextProvider from "./Context/typeCourseContext";
-import PrivacyPolicies from "./Pages/PrivacPolicies/PrivacyPolicies";
+import PrivacyPolicies from "./Pages/PrivacyPolicies/PrivacyPolicies";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
